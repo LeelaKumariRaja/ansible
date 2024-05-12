@@ -1,5 +1,5 @@
-- name: pinging servers
+- name: ping the server
   hosts: web
-  tasks: #pinging here. group pf modules/collections
-  - name: pinging
+  tasks: #list of tasks/modules/collections
+  - name: pinging the server
     ansible.builtin.ping:
