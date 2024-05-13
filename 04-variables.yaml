@@ -1,8 +1,8 @@
 - name: variables
   hosts: localhost
   vars: 
-    course: "Ansible"
-    Trainer: "SivaKumar"
+    course: "Terraform"
+    Trainer: "SreeHarsha"
     Duration: "120 hours"
   tasks:
     - name: print information
