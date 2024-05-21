@@ -10,5 +10,6 @@
       Devops: 3 #number
       AWS: 2
     RealProject: NO
-  ansible.builtin.debug:
-    msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
+  tasks:
+    ansible.builtin.debug:
+      msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
