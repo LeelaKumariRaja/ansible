@@ -13,4 +13,4 @@
   tasks:
     - name: leanring datatypes
       ansible.builtin.debug:
-        msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
+        msg: "HELLO I am leanring {{course}} and tools are {{Tools}} with experience as {{Experience}} and realprojects are {{RealProject}}"
