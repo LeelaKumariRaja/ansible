@@ -9,6 +9,12 @@
   - name: print user
     ansible.builtin.debug:
       msg: "userinfo is {{USER}}"
+  
+  - name: create user
+    ansible.builtin.command: useradd 
+    #when the task should run 
+    # acts same like if condition but no else condition
+    when: USER.rc != 0
 
   - name: say hello
     ansible.builtin.debug:
