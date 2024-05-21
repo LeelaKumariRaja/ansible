@@ -11,7 +11,7 @@
       msg: "userinfo is {{USER}}"
   
   - name: create user
-    ansible.builtin.command: useradd 
+    ansible.builtin.command: useradd expense
     #when the task should run 
     # acts same like if condition but no else condition
     when: USER.rc != 0
