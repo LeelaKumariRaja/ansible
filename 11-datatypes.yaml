@@ -1,0 +1,14 @@
+- name: datatypes
+  hosts: localhost
+  vars:
+    course: DEVOPS WITH AWS #string
+    Tools: #list
+    - ansible
+    - jenkins
+    - puppet
+    Experience: #Map
+      Devops: 3 #number
+      AWS: 2
+    RealProject: NO
+  ansible.builtin.debug:
+    msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
