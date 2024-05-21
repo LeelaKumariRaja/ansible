@@ -9,7 +9,8 @@
     Experience: #Map
       Devops: 3 #number
       AWS: 2
-    RealProject: NO
+    RealProject: true #bool
   tasks:
-    ansible.builtin.debug:
-      msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
+    - name: leanring datatypes
+      ansible.builtin.debug:
+        msg: "HELLO I am leanring {{course}} and tools are {{TOOLS}} with experience as {{Experience}} and realprojects are {{RealProject}}"
