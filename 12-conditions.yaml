@@ -3,7 +3,11 @@
   tasks: 
   - name: check user
     ansible.builtin.command: id expense
+    register: USER
     ignore_errors: true
+    ansible.builtin.debug:
+      msg: "userinfo is {{USER}}"
+
   - name: say hello
     ansible.builtin.debug:
       msg: "hello"
