@@ -9,4 +9,4 @@
     vars: 
       course: "DEVOPS"
     ansible.builtin.debug:
-      msg: "Prinitng variable {{course | LOWER}}"
+      msg: "Prinitng variable {{course | lower}}"
