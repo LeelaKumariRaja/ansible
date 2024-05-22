@@ -30,6 +30,7 @@
       msg: "min is : {{age | min}} and max is: {{age | max}}"
 
   - name: converting dictionary into list
+    hosts: localhost
     vars: 
       my_dict:
         aws: "3 months"
