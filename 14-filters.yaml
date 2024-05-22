@@ -19,6 +19,6 @@
 
   - name: removing duplicates
     vars: 
-      experience:"[1, 1, 2, 3, 4, 4, 5]" 
+      experience: [1, 1, 2, 3, 4, 4, 5] 
     ansible.builtin.debug:
       msg: "removing duplicates {{experience | unique}}"
