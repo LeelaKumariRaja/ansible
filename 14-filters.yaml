@@ -35,5 +35,7 @@
         aws: 3 months
         azure: 2 months
         devops: 3 months
-    ansible.builtin.debug:
-      msg: "Before converting  {{my_dict}}"
+    tasks: 
+    - name: before conversion
+      ansible.builtin.debug:
+        msg: "Before converting  {{my_dict}}"
