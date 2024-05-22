@@ -8,7 +8,7 @@
   - name: number greater than 10
     ansible.builtin.debug:
       msg: " {{number}} is greater than 10"
-    when: number | int > 10
+    when: number | int >= 10
 
   - name: number less than 10
     ansible.builtin.debug:
