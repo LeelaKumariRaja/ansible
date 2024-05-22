@@ -4,3 +4,9 @@
   - name: leanring filters
     ansible.builtin.debug:
       msg: "Prinitng variable {{Duration | default('3 months')}}"
+
+  - name: lowercase
+    vars: 
+    text: LOWER
+    ansible.builtin.debug:
+     msg: "Prinitng variable {{lower | LOWER}}"
