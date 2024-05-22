@@ -3,4 +3,4 @@
   tasks: 
   - name: leanring filters
     ansible.builtin.debug:
-      msg: "Prinitng variable {{Duration}}"
+      msg: "Prinitng variable {{Duration | default('3 months')}}"
