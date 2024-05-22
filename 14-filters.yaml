@@ -32,9 +32,9 @@
   - name: converting dictionary into list
     vars: 
       my_dict:
-        aws: 3 months
-        azure: 2 months
-        devops: 3 months
+        aws: "3 months"
+        azure: "2 months"
+        devops: "3 months"
     tasks: 
     - name: before conversion
       ansible.builtin.debug:
