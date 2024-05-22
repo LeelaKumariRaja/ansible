@@ -23,13 +23,13 @@
     ansible.builtin.debug:
       msg: "removing duplicates {{experience | unique}}"
 
-   - name: print min and max
+  - name: print min and max
     vars: 
       age: [19, 10, 40, 50] 
     ansible.builtin.debug:
       msg: "min is : {{age | min}} and max is: {{age | max}}"
 
-   - name: converting dictionary into list
+  - name: converting dictionary into list
     vars: 
       my_dict:
         aws: 3 months
