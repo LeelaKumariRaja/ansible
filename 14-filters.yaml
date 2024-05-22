@@ -43,4 +43,4 @@
 
   - name: after conversion
     ansible.builtin.debug:
-      msg: "After conversion {{my_dict | dict2list}}"
+      msg: "After conversion {{my_dict | dict2items}}"
