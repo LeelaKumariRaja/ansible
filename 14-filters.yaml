@@ -10,3 +10,9 @@
       course: "DEVOPS"
     ansible.builtin.debug:
       msg: "Prinitng variable {{course | lower}}"
+  
+  - name: uppercase
+    vars: 
+      course: "devops"
+    ansible.builtin.debug:
+      msg: "Prinitng variable {{course | upper}}"
