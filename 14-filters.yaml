@@ -1,0 +1,6 @@
+- name: filters
+  hosts: localhost
+  tasks: 
+  - name: leanring filters
+    ansible.builtin.debug:
+      msg: "Prinitng variable {{Duration}}"
