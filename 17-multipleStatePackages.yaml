@@ -1,0 +1,12 @@
+- name: install package susing loop
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: "{{state}}"
+    loop:
+    - { name: mysql, state: absent }
+    - { name: nginx, state: latest }
+    - { name: postfix, state: absent}
