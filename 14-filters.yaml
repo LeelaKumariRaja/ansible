@@ -9,10 +9,16 @@
     vars: 
       course: "DEVOPS"
     ansible.builtin.debug:
-      msg: "Prinitng variable {{course | lower}}"
+      msg: "converting into lowercase {{course | lower}}"
   
   - name: uppercase
     vars: 
       course: "devops"
     ansible.builtin.debug:
-      msg: "Prinitng variable {{course | upper}}"
+      msg: "converting into uppercase {{course | upper}}"
+
+  - name: removing duplicates
+    vars: 
+      experience:"[1, 1, 2, 3, 4, 4, 5]" 
+    ansible.builtin.debug:
+      msg: "removing duplicates {{experience | unique}}"
